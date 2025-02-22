@@ -889,6 +889,9 @@
   .w-36 {
     width: calc(var(--spacing) * 36);
   }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
+  }
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
@@ -2114,6 +2117,9 @@
   .text-blue-900 {
     color: var(--color-blue-900);
   }
+  .text-darkbg {
+    color: var(--color-darkbg);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -2659,6 +2665,21 @@
     &:hover {
       @media (hover: hover) {
         rotate: 12deg;
+      }
+    }
+  }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
+  }
+  .hover\:font-semibold {
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
       }
     }
   }
