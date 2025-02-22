@@ -36,7 +36,7 @@
 }
 
 .gradientText {
-    background: repeating-linear-gradient(135deg, #3525c4, #e7dee1, #0d3cbe, #bcb5e5);
+    background: repeating-linear-gradient(150deg, #3525c4, #e7dee1, #0d3cbe, #bcb5e5);
     background-size: 125% 125%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -44,19 +44,19 @@
 
     line-height: inherit;
     display: inline-block;
-    animation: gradient 3s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 75%;
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 75%;
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 75%;
     }
 }
