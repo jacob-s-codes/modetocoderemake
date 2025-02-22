@@ -25,3 +25,38 @@
   .hover-underline:hover::before {
     transform: scaleX(1);
   }
+
+  .meettheteaminitial {
+    background-image: url("../assets/teachingimg16.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgb(88, 88, 88);
+}
+
+.gradientText {
+    background: repeating-linear-gradient(135deg, #3525c4, #e7dee1, #0d3cbe, #bcb5e5);
+    background-size: 125% 125%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    line-height: inherit;
+    display: inline-block;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
