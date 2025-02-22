@@ -61,6 +61,8 @@ ScrollTrigger.batch(".animateup", {
     markers: true // Remove after testing
 });
 
+
+
 gsap.fromTo(".animateleft, .animateright",
     {
         x: (i, el) => el.classList.contains("animateleft") ? -200 : 200,
