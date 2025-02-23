@@ -1,62 +1,84 @@
 .hover-underline {
-    color: #ffffff;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .hover-underline::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #ffffff, oklch(0.882 0.059 254.128));
-    /* bottom: -5px; */
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s ease-out;
-  }
-  
-  .hover-underline::before {
-    top: -5px;
-    transform-origin: left;
-  }
-  
-  .hover-underline:hover::before {
-    transform: scaleX(1);
-  }
-
-  .meettheteaminitial {
-    background-image: url("../assets/teachingimg16.jpg");
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-color: rgb(88, 88, 88);
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
 }
 
-.gradientText {
-    background: repeating-linear-gradient(150deg, #3525c4, #e7dee1, #0d3cbe, #bcb5e5);
-    background-size: 125% 125%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, oklch(0.882 0.059 254.128));
+  /* bottom: -5px; */
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
 
-    line-height: inherit;
-    display: inline-block;
-    animation: gradient 5s ease infinite;
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+.meettheteaminitial {
+  background-image: url("../assets/teachingimg16.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgb(88, 88, 88);
+}
+
+.casestudiesinitial {
+  background-image: url("../assets/teachingimg12.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgb(88, 88, 88);
+}
+
+.imgeffect {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.relative:hover .imgeffect {
+  transform: scale(1.2);
+}
+
+
+.gradientText {
+  background: repeating-linear-gradient(150deg, #3525c4, #e7dee1, #0d3cbe, #bcb5e5);
+  background-size: 125% 125%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  line-height: inherit;
+  display: inline-block;
+  animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 75%;
-    }
+  0% {
+    background-position: 0% 75%;
+  }
 
-    50% {
-        background-position: 100% 75%;
-    }
+  50% {
+    background-position: 100% 75%;
+  }
 
-    100% {
-        background-position: 0% 75%;
-    }
+  100% {
+    background-position: 0% 75%;
+  }
 }
