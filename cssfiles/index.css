@@ -53,6 +53,24 @@
   background-color: rgb(88, 88, 88);
 }
 
+.contactbg {
+  background-image: url("../assets/teachingimg17.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgb(88, 88, 88);
+}
+
+.makegamesbg {
+  background-image: url("../assets/videogamebg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgb(88, 88, 88);
+}
+
 .learnbg {
   background-image: url("../assets/learningimg.webp");
   background-size: cover;
