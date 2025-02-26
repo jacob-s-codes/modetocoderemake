@@ -883,6 +883,9 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-\[50\%\] {
+    height: 50%;
+  }
   .h-\[600px\] {
     height: 600px;
   }
@@ -897,6 +900,9 @@
   }
   .h-auto {
     height: auto;
+  }
+  .h-fit {
+    height: fit-content;
   }
   .h-full {
     height: 100%;
