@@ -2974,6 +2974,16 @@
       visibility: visible;
     }
   }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
+  .lg\:w-fit {
+    @media (width >= 64rem) {
+      width: fit-content;
+    }
+  }
   .lg\:max-w-6xl {
     @media (width >= 64rem) {
       max-width: var(--container-6xl);
