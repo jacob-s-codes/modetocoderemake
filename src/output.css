@@ -2758,6 +2758,11 @@
       display: flex;
     }
   }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
   .md\:mr-\[50\%\] {
     @media (width >= 48rem) {
       margin-right: 50%;

@@ -10,7 +10,16 @@
     <title>Document</title>
 </head>
 <style>
-    
+    html,
+    body {
+        overflow-x: clip;
+        overscroll-behavior-x: none;
+        /* Prevent horizontal scrolling */
+        /* overflow-y: auto; */
+        /* Ensure vertical scrolling when necessary */
+        height: auto;
+        width: 100%;
+    }
 </style>
 
 <body class="overflow-x-hidden font-courier w-full">
@@ -23,8 +32,12 @@
                         <img src="./assets/horizontalmtclogo.jpg" alt="" class="w-36">
                     </li>
                 </a>
+                <div class="flex sm:hidden flex-row gap-x-4 text-4xl hamburger">
+                    &#9776;
+                </div>
                 <div class="hidden flex-row justify-between md:gap-x-36 gap-x-12 sm:flex">
                     <!-- ABOUT Section -->
+                    
                     <div class="group relative">
                         <a href="./about.html" class="hover-underline">
                             <li>ABOUT</li>
