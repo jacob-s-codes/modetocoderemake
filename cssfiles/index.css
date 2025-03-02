@@ -1,3 +1,14 @@
+html,
+    body {
+        overflow-x: clip;
+        overscroll-behavior-x: none;
+        /* Prevent horizontal scrolling */
+        /* overflow-y: auto; */
+        /* Ensure vertical scrolling when necessary */
+        height: auto;
+        width: 100%;
+    }
+
 .hover-underline {
   color: #ffffff;
   position: relative;
