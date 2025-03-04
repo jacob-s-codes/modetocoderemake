@@ -47,6 +47,8 @@ section {
 @media (max-width: 768px) {
     .review-wrp {
         grid-template-columns: 1fr;
-        row-gap: 5rem;
+        row-gap: 1rem;
+        gap: 1rem;
+        min-height: 0;
     }
 }
