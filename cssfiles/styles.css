@@ -43,3 +43,10 @@ section {
     gap: 2rem;
     row-gap: 15rem;
 }
+
+@media (max-width: 768px) {
+    .review-wrp {
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
+}
