@@ -44,11 +44,10 @@ section {
     row-gap: 15rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 994px) {
     .review-wrp {
         grid-template-columns: 1fr;
-        row-gap: 1rem;
-        gap: 1rem;
-        min-height: 0;
+        column-gap: 4rem;
+
     }
 }
