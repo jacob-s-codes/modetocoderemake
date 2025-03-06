@@ -61,6 +61,15 @@ ScrollTrigger.batch(".animateup", {
     markers: true // Remove after testing
 });
 
+document.querySelector('.hamburger').addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    if (menu.classList.contains('opacity-0')) {
+        menu.classList.remove('opacity-0', 'invisible');
+    } else {
+        menu.classList.add('opacity-0', 'invisible');
+    }
+});
+
 
 
 gsap.fromTo(".animateleft, .animateright",

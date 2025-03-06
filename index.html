@@ -25,54 +25,47 @@
 <body class="overflow-x-hidden font-courier w-full">
     <div class="sticky top-0 z-30">
         <div class="text-white w-full bg-darkbg absolute overflow-visible">
-            <!-- Changed overflow-x-hidden to overflow-visible -->
-            <ul class="max-w-[1800px] mx-auto flex flex-row items-center justify-between lg:text-xl text-lg px-12">
+            <ul class="max-w-[1800px] mx-auto flex flex-row items-center justify-between lg:text-xl text-lg ">
                 <a href="./index.html">
-                    <li class="text-2xl">
+                    <li class="text-2xl ml-12">
                         <img src="./assets/horizontalmtclogo.jpg" alt="" class="w-36">
                     </li>
                 </a>
-                <div class="flex sm:hidden flex-row gap-x-4 text-4xl hamburger">
+    
+                <!-- Hamburger Icon -->
+                <div class="flex sm:hidden flex-row gap-x-4 text-4xl hamburger cursor-pointer mr-12">
                     &#9776;
                 </div>
+    
+                <!-- Dropdown for Mobile Menu -->
+                <div id="mobile-menu" class="absolute top-full right-0 w-[50%] h-screen bg-darkbg text-white shadow-lg opacity-0 invisible transition-all duration-300">
+                    <a href="./about.html" class="block px-4 py-2 hover:bg-gray-200">ABOUT</a>
+                    <a href="./learn.html" class="block px-4 py-2 hover:bg-gray-200">LEARN</a>
+                    <a href="./contact.html" class="block px-4 py-2 hover:bg-gray-200">CONTACT</a>
+                </div>
+    
+                <!-- Desktop Navigation -->
                 <div class="hidden flex-row justify-between lg:gap-x-36 gap-x-12 sm:flex">
-                    <!-- ABOUT Section -->
-
                     <div class="group relative">
                         <a href="./about.html" class="hover-underline">
                             <li>ABOUT</li>
                         </a>
-                        <div
-                            class="invisible absolute top-full left-0  z-50 flex w-48 flex-col bg-gradient-to-br from-white to-blue-200 py-1 px-4 text-white shadow-xl group-hover:visible group-hover:opacity-100 opacity-0 transition-all duration-300">
-                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer uppercase"
-                                href="./theteam.html">Meet
-                                the team</a>
-                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer uppercase"
-                                href="./casestudies.html">Case
-                                Studies</a>
-
+                        <div class="invisible absolute top-full left-0 z-50 flex w-48 flex-col bg-gradient-to-br from-white to-blue-200 py-1 px-4 text-white shadow-xl group-hover:visible group-hover:opacity-100 opacity-0 transition-all duration-300">
+                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer uppercase" href="./theteam.html">Meet the team</a>
+                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer uppercase" href="./casestudies.html">Case Studies</a>
                         </div>
                     </div>
-
-                    <!-- Other Links -->
                     <div class="group relative">
                         <a href="./learn.html" class="hover-underline">
                             <li>LEARN</li>
                         </a>
-                        <div
-                            class="invisible absolute top-full left-0  z-50 flex w-48 flex-col bg-gradient-to-br from-white to-blue-200 py-1 px-4 text-white shadow-xl group-hover:visible group-hover:opacity-100 opacity-0 transition-all duration-300">
-                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer"
-                                href="./learnai.html">LEARN
-                                AI</a>
-                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer"
-                                href="./buildwebsites.html">BUILD
-                                WEBSITES</a>
-                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer"
-                                href="./makegames.html">MAKE GAMES</a>
-
+                        <div class="invisible absolute top-full left-0 z-50 flex w-48 flex-col bg-gradient-to-br from-white to-blue-200 py-1 px-4 text-white shadow-xl group-hover:visible group-hover:opacity-100 opacity-0 transition-all duration-300">
+                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer" href="./learnai.html">LEARN AI</a>
+                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer" href="./buildwebsites.html">BUILD WEBSITES</a>
+                            <a class="my-2 block border-b border-black py-1 hover:font-semibold text-black hover:cursor-pointer" href="./makegames.html">MAKE GAMES</a>
                         </div>
                     </div>
-                    <a href="./contact.html" class="hover-underline">
+                    <a href="./contact.html" class="hover-underline mr-12">
                         <li>CONTACT</li>
                     </a>
                 </div>
