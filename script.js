@@ -61,12 +61,19 @@ ScrollTrigger.batch(".animateup", {
     markers: true // Remove after testing
 });
 
+const footer = document.querySelector(".footer");
+const main = document.querySelector(".main");
+
 document.querySelector('.hamburger').addEventListener('click', function() {
     const menu = document.getElementById('mobile-menu');
     if (menu.classList.contains('opacity-0')) {
         menu.classList.remove('opacity-0', 'invisible');
+        footer.classList.add("brightness-50");
+        main.classList.add("brightness-50");
     } else {
         menu.classList.add('opacity-0', 'invisible');
+        footer.classList.remove("brightness-50");
+        main.classList.remove("brightness-50");
     }
 });
 
