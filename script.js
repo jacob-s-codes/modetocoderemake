@@ -63,13 +63,25 @@ ScrollTrigger.batch(".animateup", {
 
 const footer = document.querySelector(".footer");
 const main = document.querySelector(".main");
+const body = document.querySelector("body");
+const menu = document.getElementById('mobile-menu');
 
-document.querySelector('.hamburger').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu');
+main.addEventListener('click', () => {
+    if (!menu.classList.contains("opacity-0")) {
+        menu.classList.add('opacity-0', 'invisible');
+        main.classList.remove("brightness-50");
+    }
+});
+
+document.querySelector('.hamburger').addEventListener('click', function () {
+
     if (menu.classList.contains('opacity-0')) {
         menu.classList.remove('opacity-0', 'invisible');
+        // body.classList.add('overflow-y-hidden');
         footer.classList.add("brightness-50");
         main.classList.add("brightness-50");
+        footer.classList.add("overflow-hidden");
+        main.classList.add("overflow-hidden");
     } else {
         menu.classList.add('opacity-0', 'invisible');
         footer.classList.remove("brightness-50");
