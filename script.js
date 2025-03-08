@@ -65,6 +65,7 @@ const footer = document.querySelector(".footer");
 const main = document.querySelector(".main");
 const body = document.querySelector("body");
 const menu = document.getElementById('mobile-menu');
+const hamburger = document.querySelector('.hamburger');
 
 main.addEventListener('click', () => {
     if (!menu.classList.contains("opacity-0")) {
@@ -90,10 +91,16 @@ document.querySelector('.hamburger').addEventListener('click', function () {
         main.classList.add("brightness-50");
         footer.classList.add("overflow-hidden");
         main.classList.add("overflow-hidden");
+        hamburger.innerHTML = `<div class="flex sm:hidden text-2xl hamburger cursor-pointer">
+                    X
+                </div>`;
     } else {
         menu.classList.add('opacity-0', 'invisible');
         footer.style.backgroundColor = "rgba(0, 0, 0, 0)";
         main.classList.remove("brightness-50");
+        hamburger.innerHTML = `<div class="flex sm:hidden text-4xl hamburger cursor-pointer">
+                    &#9776;
+                </div>`;
     }
 });
 
