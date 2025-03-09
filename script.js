@@ -72,6 +72,9 @@ main.addEventListener('click', () => {
         menu.classList.add('opacity-0', 'invisible');
         main.classList.remove("brightness-50");
         footer.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        hamburger.innerHTML = `<div class="flex sm:hidden text-4xl hamburger cursor-pointer">
+                    &#9776;
+                </div>`;
     }
 });
 
@@ -80,6 +83,9 @@ footer.addEventListener('click', () => {
         menu.classList.add('opacity-0', 'invisible');
         main.classList.remove("brightness-50");
         footer.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        hamburger.innerHTML = `<div class="flex sm:hidden text-4xl hamburger cursor-pointer">
+                    &#9776;
+                </div>`;
     }
 });
 
@@ -106,26 +112,51 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 
 
 
-gsap.fromTo(".animateleft, .animateright",
-    {
-        x: (i, el) => el.classList.contains("animateleft") ? -200 : 200,
-        opacity: 0
-    },
-    {
-        x: 0,
-        opacity: 1,
-        duration: 2,
-        ease: "power1.out", // Ensures smooth movement
-        scrollTrigger: {
-            trigger: ".animateleft", // Make sure both triggers are tied to the same element
-            start: "top 80%",
-            end: "top 50%",
-            scrub: 1, // Ties movement directly to scroll
-            markers: true,
-            toggleActions: "play none none none", // Ensures they don't replay incorrectly
-        },
-    }
-);
+// gsap.fromTo(".animateleft, .animateright",
+//     {
+//         x: (i, el) => el.classList.contains("animateleft") ? -200 : 200,
+//         opacity: 0
+//     },
+//     {
+//         x: 0,
+//         opacity: 1,
+//         duration: 2,
+//         ease: "power1.out", // Ensures smooth movement
+//         scrollTrigger: {
+//             trigger: ".animateleft", // Make sure both triggers are tied to the same element
+//             start: "top 80%",
+//             end: "top 50%",
+//             scrub: 1, // Ties movement directly to scroll
+//             markers: true,
+//             toggleActions: "play none none none", // Ensures they don't replay incorrectly
+//         },
+//     }
+// );
+
+gsap.utils.toArray(".animateleft, .animateright").forEach(el => {
+    let parent = el.closest(".parent-leftright") || el;
+    gsap.fromTo(el, 
+        {
+            x: el.classList.contains("animateleft") ? -200 : 200,
+            opacity: 0
+        }, 
+        {
+            x: 0,
+            opacity: 1,
+            duration: 2,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: parent, // Each element gets its own trigger
+                start: "top 80%",
+                end: "top 50%",
+                scrub: 1,
+                markers: true,
+                toggleActions: "play none none none",
+            }
+        }
+    );
+});
+
 
 var tl = gsap.timeline({
     scrollTrigger: {
