@@ -1,13 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-    gsap.registerPlugin(ScrollTrigger);
 
-    const lenis = new Lenis();
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add((time) => {
-        lenis.raf(time * 1000);
-    })
-    gsap.ticker.lagSmoothing(0);
-});
 
 gsap.timeline({
     scrollTrigger: {
@@ -15,7 +6,7 @@ gsap.timeline({
         start: "top top",
         end: "+=300", // Shared scroll distance
         scrub: 1,
-        markers: true,
+   
     }
 })
     .to(".animatedown", { y: -200 }, 0) // Move slower
@@ -39,7 +30,6 @@ gsap.utils.toArray(".animateleft, .animateright").forEach(el => {
                 start: "top 80%",
                 end: "top 50%",
                 scrub: 1,
-                markers: true,
                 toggleActions: "play none none none",
             }
         }
@@ -53,7 +43,6 @@ var tl = gsap.timeline({
         start: "top 80%",
         end: "bottom top",
         scrub: 1,
-        markers: true,
     }
 });
 

@@ -1,23 +1,13 @@
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
 
-
-
-
-
-
-// gsap.fromTo(".animateup", {
-//     y: 300,
-//     opacity: 0
-// }, {
-//     scrollTrigger: {
-//         trigger: ".animateup",
-//         start: "top 90%",
-//         end: "top 80%",
-//         scrub: 1,
-//         markers: true,
-//     },
-//     y: 0,
-//     opacity: 1,
-// });
+    const lenis = new Lenis();
+    lenis.on("scroll", ScrollTrigger.update);
+    gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+    })
+    gsap.ticker.lagSmoothing(0);
+});
 
 
 
