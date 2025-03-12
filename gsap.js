@@ -66,5 +66,5 @@ ScrollTrigger.batch(".animateup", {
     start: "top 60%",
     end: "top 50%",
     scrub: 1,
-    markers: true // Remove after testing
+   
 });
