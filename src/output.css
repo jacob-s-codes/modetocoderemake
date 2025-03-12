@@ -3065,6 +3065,16 @@
       width: calc(var(--spacing) * 96);
     }
   }
+  .sm\:pt-0 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:pb-0 {
+    @media (width >= 40rem) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mr-\[50\%\] {
     @media (width >= 48rem) {
       margin-right: 50%;
@@ -3211,6 +3221,12 @@
   .lg\:pl-8 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:text-2xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .lg\:text-3xl {
