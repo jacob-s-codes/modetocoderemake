@@ -1,9 +1,13 @@
-import Image from "next/image";
+"use client";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      Hello world
+      <Navbar />
+      <div className="my-[100vh]">
+        Hello world
+      </div>
     </div>
   );
 }
