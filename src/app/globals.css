@@ -3,6 +3,8 @@
 
 @theme {
   --color-darkbg: #050126;
+  --color-darkbg2: #090340;
+  --color-lightbg: #2c18db;
 }
 
 html,
@@ -14,4 +16,36 @@ body {
   /* Ensure vertical scrolling when necessary */
   height: auto;
   width: 100%;
+}
+
+.mega-menu {
+  opacity:0;
+  visibility:hidden;
+  z-index: -900;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  transition: all 0.15s linear 0s;
+}
+
+
+
+/* #hoverable Class Styles */
+.hoverable {
+  position: static;
+}
+
+.hoverable > a:after {
+
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.hoverable:hover .mega-menu {
+  opacity:1;
+  visibility:visible;
+  z-index: 900;
 }
