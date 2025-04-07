@@ -21,7 +21,7 @@ body {
 .mega-menu {
   opacity:0;
   visibility:hidden;
-  z-index: -900;
+  /* z-index: -900; */
   left: 0;
   position: absolute;
   text-align: left;
@@ -47,5 +47,16 @@ body {
 .hoverable:hover .mega-menu {
   opacity:1;
   visibility:visible;
-  z-index: 900;
+  /* z-index: 900; */
+}
+
+.homebg {
+  background-image: url('/teachingimg1.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: rgb(181, 179, 179);
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100vw;
 }
