@@ -75,7 +75,7 @@ const Navbar = () => {
                                 <div className="container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center items-center ">
                                     {/* Text Section - 50% width */}
                                     <div className="flex flex-col items-center justify-center w-full lg:w-1/2 px-4 ">
-                                        <ul className="w-full  pb-6 pt-6 border border-white px-2 rounded-lg">
+                                        <ul className="w-full  pb-6 pt-6 border border-white px-2 rounded-lg hover:bg-darkbg2">
                                             <div className="flex items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-file-person-fill h-8 mb-3 mr-3 fill-current text-white" viewBox="0 0 16 16">
                                                     <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
@@ -85,7 +85,7 @@ const Navbar = () => {
                                             <p className="text-sm text-white">Check out the amazing volunteers, teachers, and leaders that help Mode to Code!</p>
                                             <Learnmorebtn />
                                         </ul>
-                                        <ul className="w-full mt-2 pb-6 pt-6 border border-white px-2 rounded-lg">
+                                        <ul className="w-full mt-2 pb-6 pt-6 border border-white px-2 rounded-lg hover:bg-darkbg2">
                                             <div className="flex items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-file-person-fill h-8 mb-3 mr-3 fill-current text-white" viewBox="0 0 16 16">
                                                     <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
