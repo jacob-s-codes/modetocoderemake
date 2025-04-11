@@ -49,7 +49,7 @@ const Testimonials = () => {
         <div className="review-wrp z-20 text-black grid grid-cols-2 min-h-0 gap-8 gap-y-60 md:gap-y-60">
           <div className="review rl relative">
             <img 
-              src="/exampletestimonial.png" 
+              src="/paulettetestimonial.png" 
               alt="Testimonial" 
               className="rounded-xl sm:w-96 sm:h-96 w-64 h-auto object-cover shadow-2xl shadow-black"
             />
@@ -57,7 +57,7 @@ const Testimonials = () => {
           
           <div className="review rr relative">
             <img 
-              src="/exampletestimonial.png" 
+              src="/josietestimonial.png" 
               alt="Testimonial" 
               className="rounded-xl sm:w-96 sm:h-96 w-64 h-auto object-cover shadow-2xl shadow-black"
             />
@@ -65,7 +65,7 @@ const Testimonials = () => {
           
           <div className="review rl relative">
             <img 
-              src="/exampletestimonial.png" 
+              src="/jessicatestimonial.png" 
               alt="Testimonial" 
               className="rounded-xl sm:w-96 sm:h-96 w-64 h-auto object-cover shadow-2xl shadow-black"
             />
