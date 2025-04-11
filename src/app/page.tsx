@@ -11,7 +11,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full  bg-blue-200">
-        <div className=" w-full max-w-[1800px] mx-auto px-8 flex flex-col gap-y-44 justify-center items-center pt-32 ">
+        <div className=" w-full max-w-[1800px] mx-auto px-8 flex flex-col gap-y-44 justify-between  pt-32 ">
 
           {/* Who we are */}
           <div className="flex lg:flex-row flex-col-reverse parent-leftright lg:items-center justify-between">
@@ -47,19 +47,19 @@ export default function Home() {
               <h3 className="text-2xl max-w-4xl mx-auto pt-2 font-light">Check out all the different ways that Mode to Code is teaching students around the world valuable technological concepts:</h3>
             </div>
             <div className="flex flex-row items-center  justify-center gap-x-6 gap-y-8 flex-wrap pt-16">
-              <div className="flex flex-col items-center w-lg">
+              <div className="flex flex-col items-center w-md">
                 <img src="/teachingimg1.jpg" alt="" className="rounded-xl shadow-2xl shadow-darkbg" />
                 <h3 className="text-center text-2xl font-bold pt-4 text-blue-900 uppercase">In-person</h3>
                 <p className="text-center text-xl font-light pt-2">We offer in-person classes for students who prefer a more hands-on approach to learning.</p>
               </div>
 
-              <div className="flex flex-col items-center w-lg">
+              <div className="flex flex-col items-center w-md">
                 <img src="/teachingimg1.jpg" alt="" className="rounded-xl shadow-2xl shadow-darkbg" />
                 <h3 className="text-center text-2xl font-bold pt-4 text-blue-900 uppercase">online</h3>
                 <p className="text-center text-xl font-light pt-2">We offer in-person classes for students who prefer a more hands-on approach to learning.</p>
               </div>
 
-              <div className="flex flex-col items-center w-lg">
+              <div className="flex flex-col items-center w-md">
                 <img src="/teachingimg1.jpg" alt="" className="rounded-xl shadow-2xl shadow-darkbg" />
                 <h3 className="text-center text-2xl font-bold pt-4 text-blue-900 uppercase">For seniors</h3>
                 <p className="text-center text-xl font-light pt-2">We offer in-person classes for students who prefer a more hands-on approach to learning.</p>
@@ -75,12 +75,12 @@ export default function Home() {
           <Testimonials />
         </div>
 
-
-        <div className="flex lg:flex-row-reverse flex-col-reverse parent-leftright lg:items-center justify-between py-44 px-8">
-            <div className="flex flex-col xl:max-w-3xl max-w-xl animateleft text-right items-end w-full">
+        <div className=" w-full max-w-[1800px] mx-auto px-8 flex flex-col gap-y-44 justify-between  py-32 ">
+          <div className="flex lg:flex-row flex-col-reverse parent-leftright lg:items-center justify-between">
+            <div className="flex flex-col xl:max-w-3xl max-w-xl animateleft">
               <h3 className="uppercase text-blue-900 text-3xl">About us</h3>
               <h2 className="uppercase text-4xl font-bold pb-2">Who we are</h2>
-              <hr className="border-4 border-black mb-8 w-full" />
+              <hr className="border-4 border-black mb-8" />
               <p className="text-2xl font-light mb-8">We are a team of dedicated professionals who are passionate about
                 teaching the
                 next generation valuable technological tools. We believe that the future of the world is in
@@ -96,10 +96,11 @@ export default function Home() {
                   US</span>
               </a>
             </div>
-            <div className="max-w-3xl relative animateright rounded-xl lg:mr-8 lg:pb-0 pb-8">
+            <div className="max-w-3xl relative animateright rounded-xl lg:ml-8 lg:pb-0 pb-8">
               <img src="/teachingimg1.jpg" alt="" className="w-full rounded-xl shadow-2xl shadow-darkbg" />
             </div>
           </div>
+        </div>
 
       </div>
 
